@@ -25,8 +25,8 @@ if ($result->num_rows > 0) {
         ?><td><?php echo $row['email']?></td><?php
         ?><td><?php echo $row['phone']?></td><?php
         ?><td><?php echo $row['address']?></td><?php
-        ?><td>Update</td><?php
-        ?><td>Delete</tr><?php
+        ?><td><a href="edit_form.php?user_id=<?php echo $row['id']?>">Edit</a></td><?php
+        ?><td><a href="delete.php?user_id=<?php echo $row['id']?>">Delete</a></tr><?php
 
     }?> </tbody></table><?php
 } else {
